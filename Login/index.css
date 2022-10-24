@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  /* background-image: url(images/edgerunners-speed-pattern-mobile-0d3758eb.svg); */
+  /* animation: back 2s infinite; */
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: 1500px 1100px;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  font-family:  sans-serif;
+}
+@keyframes back{
+  20% {
+    background: linear-gradient(toright,  #00ff9f, #fcee0a);
+  }
+
+  40% {
+    background-color: #00b8ff;
+  }
+
+  60% {
+    background-color: #fcee0a;
+  }
+
+  80% {
+    background-color: #00ff9f;
+  }
+
+  100% {
+    background-color: #d600ff;
+  }
+
+}
+
+#form {
+  background-color: #fcee0a;
+}
+
+.login {
+  background-color: #fcee0a;
+  animation: mymove 3s infinite;
+
+  border: 8px solid yellow;
+  border-radius: 25px;
+  width: 500px;
+  height: 780px;
+  /* margin-left: 100px; */
+  text-align: var(100px);
+  /* align-items: center; */
+  margin-top: 90px;
+}
+
+@keyframes mymove {
+  20% {
+    border-color: #00ff9f;
+  }
+
+  40% {
+    border-color: #00b8ff;
+  }
+
+  60% {
+    border-color: #001eff;
+  }
+
+  80% {
+    border-color: red;
+  }
+
+  100% {
+    border-color: #d600ff;
+  }
+}
+
+.container {
+  background-color: #fcee0a;
+  display: flex;
+  flex-direction: column;
+  margin: 100px;
+  margin-top: 100px;
+}
+
+input {
+  color: red;
+
+  background-color: #fcee0a;
+  /* position: absolute;
+    right: 200px; */
+  padding: 10px;
+  padding-right: 30px;
+  border-radius: 5px;
+  border: none;
+  width: 300px;
+  margin: 20px;
+  font-size: 20px;
+  border: 3px solid rgb(5, 129, 129);
+}
+
+/* input::placeholder {
+  color: red;
+} */
+input:hover {
+  border-color: red;
+}
+label {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: #fcee0a;
+  color: black;
+  font-size: xx-large;
+  font-size: 20px;
+}
+.sub {
+  background-color: black;
+  color: #fcee0a;
+}
+
+
+
+
+
