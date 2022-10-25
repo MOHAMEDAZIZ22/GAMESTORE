@@ -14,7 +14,6 @@
     --main-color: #076585;
     --dark-color: rgb(13, 10, 33);
     --light-color: #322f40;
-    /* --text-color: hsl(0, 0%, 91%); */
     --text-color: white;
 }
 
@@ -68,8 +67,45 @@ header {
 }
 
 .logo span {
-    color: #fcee0a;
-}
+
+    -webkit-animation: colorchange 5s infinite alternate;
+  }
+  
+  @-webkit-keyframes colorchange {
+    0% {
+      color: yellow;
+    }
+    10% {
+      color: pink;
+    }
+    20% {
+      color: #1abc9c;
+    }
+    30% {
+      color: aqua;
+    }
+    40% {
+      color: yellow;
+    }
+    50% {
+      color: blueviolet;
+    }
+    60% {
+      color: yellow;
+    }
+    70% {
+      color: #2980b9;
+    }
+    80% {
+      color: #f1c40f;
+    }
+    90% {
+      color: #2980b9;
+    }
+    100% {
+      color: pink;
+    }
+  }
 
 .nav-icon {
     display: flex;
@@ -216,15 +252,14 @@ header {
 }
 
 .notification-box .bx {
-    color: #fcee0a;
+    color: green;
+}
+.box-color .bx {
+    color: red;
 }
 
 .box-color {
     background: hsl(0, 0%, 100%, 0.4);
-}
-
-.box-color .bx {
-    color: red;
 }
 
 .banner {
@@ -365,7 +400,8 @@ header {
 }
 
 .box-btn .bx:hover {
-    background: var(--dark-color);
+    background: #076585;
+    color: white;
 }
 
 .new-content {
@@ -516,24 +552,36 @@ header {
     width: 100%;
     height: 4px;
     z-index: 300;
-    background: rgba(255, 255, 255, 0.05);
+    /* background: rgba(255, 255, 255, 0.05); */
+    background: black;
 }
 
 .progress-bar {
     height: 4px;
-    background: var(--main-color);
+    background: #fcee0a;
     /* background: linear-gradient(to right, #008aff, #00ffe7, ); */
-    animation: animate 5s linear infinite;
+    animation: animate 4s linear infinite;
     /* width: 100%; */
 }
 @keyframes animate{
     0%, 100%{
         filter: hue-rotate(0deg);
     }
-    50%{
+    20%{
+        filter: hue-rotate(90deg);
+    }
+    40%{
+        filter: hue-rotate(180deg);
+    }
+    60%{
+        filter: hue-rotate(270deg);
+    }
+    80%{
         filter: hue-rotate(360deg);
     }
+    
 }
+
 
 @media (max-width: 1080px) {
     .container {

@@ -2,13 +2,12 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* background: url(images/cyber.jpg); */
 }
 body {
-  /* background-image: url(images/edgerunners-speed-pattern-mobile-0d3758eb.svg); */
-  /* animation: back 2s infinite; */
-  background-color: black;
-  background-repeat: no-repeat;
-  background-size: 1500px 1100px;
+  /* background-image: url(https://www.cyberpunk.net/build/images/home3/screen-image-about-08a097de.jpg); */
+  background: linear-gradient(to top,#076585, black);
+
   width: auto;
   height: auto;
   display: flex;
@@ -18,31 +17,9 @@ body {
   min-height: 100vh;
   font-family:  sans-serif;
 }
-@keyframes back{
-  20% {
-    background: linear-gradient(toright,  #00ff9f, #fcee0a);
-  }
-
-  40% {
-    background-color: #00b8ff;
-  }
-
-  60% {
-    background-color: #fcee0a;
-  }
-
-  80% {
-    background-color: #00ff9f;
-  }
-
-  100% {
-    background-color: #d600ff;
-  }
-
-}
 
 #form {
-  background-color: #fcee0a;
+  /* background-color: #fcee0a; */
 }
 
 .login {
@@ -120,6 +97,7 @@ label {
 }
 .sub {
   background-color: black;
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 15% 100%, 0% 50%);
   color: #fcee0a;
 }
 
