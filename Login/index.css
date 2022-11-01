@@ -2,36 +2,29 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* background: url(images/cyber.jpg); */
 }
+
 body {
   /* background-image: url(https://www.cyberpunk.net/build/images/home3/screen-image-about-08a097de.jpg); */
-  background: linear-gradient(to top,#076585, black);
-
+  background: linear-gradient(to top, #076585, black);
   width: auto;
   height: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  min-height: 100vh;
-  font-family:  sans-serif;
-}
-
-#form {
-  /* background-color: #fcee0a; */
+  font-family: sans-serif;
 }
 
 .login {
   background-color: #fcee0a;
   animation: mymove 3s infinite;
-
   border: 8px solid yellow;
   border-radius: 25px;
   width: 500px;
-  height: 780px;
+  height: 650px;
   /* margin-left: 100px; */
-  text-align: var(100px);
+  text-align: var(80px);
   /* align-items: center; */
   margin-top: 90px;
 }
@@ -68,10 +61,7 @@ body {
 
 input {
   color: red;
-
   background-color: #fcee0a;
-  /* position: absolute;
-    right: 200px; */
   padding: 10px;
   padding-right: 30px;
   border-radius: 5px;
@@ -81,13 +71,10 @@ input {
   font-size: 20px;
   border: 3px solid rgb(5, 129, 129);
 }
-
-/* input::placeholder {
-  color: red;
-} */
 input:hover {
   border-color: red;
 }
+
 label {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   background-color: #fcee0a;
@@ -95,13 +82,105 @@ label {
   font-size: xx-large;
   font-size: 20px;
 }
+
 .sub {
   background-color: black;
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 15% 100%, 0% 50%);
   color: #fcee0a;
 }
 
+button,
+button::after {
+  width: 230px;
+  height: 65px;
+  font-size: 30px;
+  background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  line-height: 88px;
+  box-shadow: 6px 0px 0px #00E6F6;
+  outline: transparent;
+  position: relative;
+  left: 60px;
+}
 
+button::after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  content: 'SECURED';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+  clip-path: var(--slice-0);
+}
+button:hover::after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
 
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
 
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
 
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}

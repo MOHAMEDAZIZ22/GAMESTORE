@@ -76,34 +76,34 @@ header {
       color: yellow;
     }
     10% {
-      color: pink;
+      color: rgb(183, 7, 183);
     }
     20% {
       color: #1abc9c;
     }
     30% {
-      color: aqua;
+      color: rgb(30, 228, 30);
     }
     40% {
       color: yellow;
     }
     50% {
-      color: blueviolet;
+      color: #1abc9c;
     }
-    60% {
+    /* 60% {
       color: yellow;
-    }
+    } */
     70% {
-      color: #2980b9;
+      color: rgb(183, 7, 183);
     }
     80% {
       color: #f1c40f;
     }
     90% {
-      color: #2980b9;
+      color: rgb(20, 227, 20);
     }
     100% {
-      color: pink;
+      color: white;
     }
   }
 
@@ -386,7 +386,7 @@ header {
 }
 
 .rating span {
-    color: #fcee0a;
+    /* color: #fcee0a; */
     font-size: 0.9rem;
 }
 
@@ -442,6 +442,12 @@ header {
 .footer p {
     font-size: 0.9rem;
     color: var(--text-color);
+}
+.founder{
+    
+    position: absolute;
+    right: 500px;
+    /* bottom: 0px; */
 }
 
 .video-container video {
